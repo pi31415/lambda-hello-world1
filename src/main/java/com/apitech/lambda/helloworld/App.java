@@ -18,7 +18,6 @@ public class App implements RequestHandler<Request, Response>
 
     public Response handleRequest(Request request, Context context) {
 
-        LambdaLogger.log("asdfsf");
         return new Response (context.toString());
     }
 }
