@@ -11,6 +11,7 @@ import com.amazonaws.services.lambda.runtime.Context;
  */
 public class App implements RequestHandler<Request, Response>
 {
+
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
@@ -18,7 +19,7 @@ public class App implements RequestHandler<Request, Response>
 
     public Response handleRequest(Request request, Context context) {
 
-        
-        return new Response (context.toString());
+
+        return new Response ("Hellow World!!");
     }
 }
